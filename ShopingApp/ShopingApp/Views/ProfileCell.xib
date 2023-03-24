@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="59" id="KGk-i7-Jjw" customClass="ProfileCell" customModule="ShopingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="59"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="385" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle.portrait.and.arrow.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="B9z-4X-GuL">
+                        <rect key="frame" x="0.0" y="10" width="40" height="39.666666666666671"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Xzx-CJ-2Z6"/>
+                            <constraint firstAttribute="width" constant="40" id="ayA-TL-3dx"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKi-DY-Cze">
+                        <rect key="frame" x="60" y="19" width="46.666666666666657" height="21"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ets-0z-AaP">
+                        <rect key="frame" x="338.33333333333331" y="19" width="46.666666666666686" height="21"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JKi-DY-Cze" firstAttribute="centerY" secondItem="B9z-4X-GuL" secondAttribute="centerY" id="7K4-Gt-Ugl"/>
+                    <constraint firstAttribute="trailing" secondItem="Ets-0z-AaP" secondAttribute="trailing" id="PgP-kf-MQL"/>
+                    <constraint firstItem="Ets-0z-AaP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="gWv-rU-HTq"/>
+                    <constraint firstItem="B9z-4X-GuL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hAS-G3-6SC"/>
+                    <constraint firstItem="JKi-DY-Cze" firstAttribute="leading" secondItem="B9z-4X-GuL" secondAttribute="trailing" constant="20" id="sWB-f7-I4P"/>
+                    <constraint firstItem="B9z-4X-GuL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="wPr-02-mO3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="balance" destination="Ets-0z-AaP" id="PWg-g0-Tca"/>
+                <outlet property="nameLbl" destination="JKi-DY-Cze" id="wtT-GK-gpV"/>
+                <outlet property="photo" destination="B9z-4X-GuL" id="V3b-4m-27Y"/>
+            </connections>
+            <point key="canvasLocation" x="156.4885496183206" y="25"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="rectangle.portrait.and.arrow.right" catalog="system" width="128" height="109"/>
+    </resources>
+</document>

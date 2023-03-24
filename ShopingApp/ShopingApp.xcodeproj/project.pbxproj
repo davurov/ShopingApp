@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D0A446629C70773009C02D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A446529C70773009C02D5 /* AppDelegate.swift */; };
+		3D0A446F29C70774009C02D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A446E29C70774009C02D5 /* Assets.xcassets */; };
+		3D0A447229C70774009C02D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A447029C70774009C02D5 /* LaunchScreen.storyboard */; };
+		3D0A447B29C707D2009C02D5 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A447929C707D2009C02D5 /* SignInVC.swift */; };
+		3D0A447C29C707D2009C02D5 /* SignInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A447A29C707D2009C02D5 /* SignInVC.xib */; };
+		3D0A447F29C707EA009C02D5 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A447D29C707EA009C02D5 /* LogInVC.swift */; };
+		3D0A448029C707EA009C02D5 /* LogInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A447E29C707EA009C02D5 /* LogInVC.xib */; };
+		3D0A448329C7087A009C02D5 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A448129C7087A009C02D5 /* ProfileVC.swift */; };
+		3D0A448429C7087A009C02D5 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A448229C7087A009C02D5 /* ProfileVC.xib */; };
+		3D0A448729C70963009C02D5 /* MainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A448529C70963009C02D5 /* MainPageVC.swift */; };
+		3D0A448829C70963009C02D5 /* MainPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A448629C70963009C02D5 /* MainPageVC.xib */; };
+		3D0A448B29C7099F009C02D5 /* ProductDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A448929C7099F009C02D5 /* ProductDetailVC.swift */; };
+		3D0A448C29C7099F009C02D5 /* ProductDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A448A29C7099F009C02D5 /* ProductDetailVC.xib */; };
+		3D0A44A929C71283009C02D5 /* Montserrat-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A449229C71283009C02D5 /* Montserrat-VariableFont_wght.ttf */; };
+		3D0A44AA29C71283009C02D5 /* Montserrat-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A449329C71283009C02D5 /* Montserrat-Italic-VariableFont_wght.ttf */; };
+		3D0A44AB29C71283009C02D5 /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A449529C71283009C02D5 /* Montserrat-LightItalic.ttf */; };
+		3D0A44AC29C71283009C02D5 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A449629C71283009C02D5 /* Montserrat-Medium.ttf */; };
+		3D0A44AD29C71283009C02D5 /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A449729C71283009C02D5 /* Montserrat-BoldItalic.ttf */; };
+		3D0A44AE29C71283009C02D5 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A449829C71283009C02D5 /* Montserrat-Light.ttf */; };
+		3D0A44AF29C71283009C02D5 /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A449929C71283009C02D5 /* Montserrat-ThinItalic.ttf */; };
+		3D0A44B029C71283009C02D5 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A449A29C71283009C02D5 /* Montserrat-ExtraLight.ttf */; };
+		3D0A44B129C71283009C02D5 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A449B29C71283009C02D5 /* Montserrat-Thin.ttf */; };
+		3D0A44B229C71283009C02D5 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A449C29C71283009C02D5 /* Montserrat-Bold.ttf */; };
+		3D0A44B329C71283009C02D5 /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A449D29C71283009C02D5 /* Montserrat-MediumItalic.ttf */; };
+		3D0A44B429C71283009C02D5 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A449E29C71283009C02D5 /* Montserrat-BlackItalic.ttf */; };
+		3D0A44B529C71283009C02D5 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A449F29C71283009C02D5 /* Montserrat-SemiBold.ttf */; };
+		3D0A44B629C71283009C02D5 /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A44A029C71283009C02D5 /* Montserrat-ExtraLightItalic.ttf */; };
+		3D0A44B729C71283009C02D5 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A44A129C71283009C02D5 /* Montserrat-ExtraBold.ttf */; };
+		3D0A44B829C71283009C02D5 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A44A229C71283009C02D5 /* Montserrat-Black.ttf */; };
+		3D0A44B929C71283009C02D5 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A44A329C71283009C02D5 /* Montserrat-Regular.ttf */; };
+		3D0A44BA29C71283009C02D5 /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A44A429C71283009C02D5 /* Montserrat-Italic.ttf */; };
+		3D0A44BB29C71283009C02D5 /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A44A529C71283009C02D5 /* Montserrat-SemiBoldItalic.ttf */; };
+		3D0A44BC29C71283009C02D5 /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A44A629C71283009C02D5 /* Montserrat-ExtraBoldItalic.ttf */; };
+		3D0A44BD29C71283009C02D5 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A44A729C71283009C02D5 /* OFL.txt */; };
+		3D0A44BE29C71283009C02D5 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A44A829C71283009C02D5 /* README.txt */; };
+		3D3E201029CD808800F426BB /* FlashSaleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E200F29CD808800F426BB /* FlashSaleModel.swift */; };
+		3D53AC2C29CCB1E6009D20D4 /* LatestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D53AC2A29CCB1E6009D20D4 /* LatestCell.swift */; };
+		3D53AC2D29CCB1E6009D20D4 /* LatestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D53AC2B29CCB1E6009D20D4 /* LatestCell.xib */; };
+		3D53AC3029CCB1FF009D20D4 /* FlashSaleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D53AC2E29CCB1FF009D20D4 /* FlashSaleCell.swift */; };
+		3D53AC3129CCB1FF009D20D4 /* FlashSaleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D53AC2F29CCB1FF009D20D4 /* FlashSaleCell.xib */; };
+		3D53AC3329CCC75F009D20D4 /* LatestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D53AC3229CCC75F009D20D4 /* LatestModel.swift */; };
+		3D8E06D929CB455600D10151 /* LikedProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E06D729CB455600D10151 /* LikedProductsVC.swift */; };
+		3D8E06DA29CB455600D10151 /* LikedProductsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D8E06D829CB455600D10151 /* LikedProductsVC.xib */; };
+		3D8E06DD29CB457900D10151 /* SavedProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E06DB29CB457900D10151 /* SavedProductsVC.swift */; };
+		3D8E06DE29CB457900D10151 /* SavedProductsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D8E06DC29CB457900D10151 /* SavedProductsVC.xib */; };
+		3D8E06E129CB459300D10151 /* CommentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E06DF29CB459300D10151 /* CommentVC.swift */; };
+		3D8E06E229CB459300D10151 /* CommentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D8E06E029CB459300D10151 /* CommentVC.xib */; };
+		3D8E070429CC2C3200D10151 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D8E070329CC2C3200D10151 /* GoogleService-Info.plist */; };
+		3DE64F2029CDCE0F006C4E25 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE64F1E29CDCE0F006C4E25 /* ProfileCell.swift */; };
+		3DE64F2129CDCE0F006C4E25 /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DE64F1F29CDCE0F006C4E25 /* ProfileCell.xib */; };
+		5B74018A2C8D95A27F284CE4 /* Pods_ShopingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B9A9AD03888A24F93594AC /* Pods_ShopingApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		07B9A9AD03888A24F93594AC /* Pods_ShopingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShopingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D0A446229C70773009C02D5 /* ShopingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D0A446529C70773009C02D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D0A446E29C70774009C02D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D0A447129C70774009C02D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D0A447329C70774009C02D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D0A447929C707D2009C02D5 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		3D0A447A29C707D2009C02D5 /* SignInVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInVC.xib; sourceTree = "<group>"; };
+		3D0A447D29C707EA009C02D5 /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
+		3D0A447E29C707EA009C02D5 /* LogInVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogInVC.xib; sourceTree = "<group>"; };
+		3D0A448129C7087A009C02D5 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		3D0A448229C7087A009C02D5 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
+		3D0A448529C70963009C02D5 /* MainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageVC.swift; sourceTree = "<group>"; };
+		3D0A448629C70963009C02D5 /* MainPageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainPageVC.xib; sourceTree = "<group>"; };
+		3D0A448929C7099F009C02D5 /* ProductDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailVC.swift; sourceTree = "<group>"; };
+		3D0A448A29C7099F009C02D5 /* ProductDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductDetailVC.xib; sourceTree = "<group>"; };
+		3D0A449229C71283009C02D5 /* Montserrat-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		3D0A449329C71283009C02D5 /* Montserrat-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		3D0A449529C71283009C02D5 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
+		3D0A449629C71283009C02D5 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		3D0A449729C71283009C02D5 /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
+		3D0A449829C71283009C02D5 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		3D0A449929C71283009C02D5 /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
+		3D0A449A29C71283009C02D5 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		3D0A449B29C71283009C02D5 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		3D0A449C29C71283009C02D5 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		3D0A449D29C71283009C02D5 /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
+		3D0A449E29C71283009C02D5 /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
+		3D0A449F29C71283009C02D5 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		3D0A44A029C71283009C02D5 /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		3D0A44A129C71283009C02D5 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		3D0A44A229C71283009C02D5 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		3D0A44A329C71283009C02D5 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		3D0A44A429C71283009C02D5 /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
+		3D0A44A529C71283009C02D5 /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		3D0A44A629C71283009C02D5 /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		3D0A44A729C71283009C02D5 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		3D0A44A829C71283009C02D5 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		3D3E200F29CD808800F426BB /* FlashSaleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashSaleModel.swift; sourceTree = "<group>"; };
+		3D53AC2A29CCB1E6009D20D4 /* LatestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestCell.swift; sourceTree = "<group>"; };
+		3D53AC2B29CCB1E6009D20D4 /* LatestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LatestCell.xib; sourceTree = "<group>"; };
+		3D53AC2E29CCB1FF009D20D4 /* FlashSaleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashSaleCell.swift; sourceTree = "<group>"; };
+		3D53AC2F29CCB1FF009D20D4 /* FlashSaleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlashSaleCell.xib; sourceTree = "<group>"; };
+		3D53AC3229CCC75F009D20D4 /* LatestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestModel.swift; sourceTree = "<group>"; };
+		3D8E06D729CB455600D10151 /* LikedProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedProductsVC.swift; sourceTree = "<group>"; };
+		3D8E06D829CB455600D10151 /* LikedProductsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikedProductsVC.xib; sourceTree = "<group>"; };
+		3D8E06DB29CB457900D10151 /* SavedProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedProductsVC.swift; sourceTree = "<group>"; };
+		3D8E06DC29CB457900D10151 /* SavedProductsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SavedProductsVC.xib; sourceTree = "<group>"; };
+		3D8E06DF29CB459300D10151 /* CommentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentVC.swift; sourceTree = "<group>"; };
+		3D8E06E029CB459300D10151 /* CommentVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentVC.xib; sourceTree = "<group>"; };
+		3D8E070329CC2C3200D10151 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3DE64F1E29CDCE0F006C4E25 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		3DE64F1F29CDCE0F006C4E25 /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
+		6A829850F1B6EBB0A4894233 /* Pods-ShopingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopingApp.debug.xcconfig"; path = "Target Support Files/Pods-ShopingApp/Pods-ShopingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		FC18E03F261AEE9D6CA7480C /* Pods-ShopingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopingApp.release.xcconfig"; path = "Target Support Files/Pods-ShopingApp/Pods-ShopingApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D0A445F29C70773009C02D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B74018A2C8D95A27F284CE4 /* Pods_ShopingApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1ADAEB33C0D5380B7CC38004 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A829850F1B6EBB0A4894233 /* Pods-ShopingApp.debug.xcconfig */,
+				FC18E03F261AEE9D6CA7480C /* Pods-ShopingApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3D0A445929C70773009C02D5 = {
+			isa = PBXGroup;
+			children = (
+				3D0A446429C70773009C02D5 /* ShopingApp */,
+				3D0A446329C70773009C02D5 /* Products */,
+				1ADAEB33C0D5380B7CC38004 /* Pods */,
+				FDB02920130625064E5BDCBC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3D0A446329C70773009C02D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D0A446229C70773009C02D5 /* ShopingApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D0A446429C70773009C02D5 /* ShopingApp */ = {
+			isa = PBXGroup;
+			children = (
+				3D0A449029C70A1D009C02D5 /* Model */,
+				3D0A448E29C709BA009C02D5 /* Views */,
+				3D0A448D29C709AB009C02D5 /* Controllers */,
+				3D0A448F29C709F5009C02D5 /* Helpers */,
+				3D0A447029C70774009C02D5 /* LaunchScreen.storyboard */,
+				3D0A447329C70774009C02D5 /* Info.plist */,
+			);
+			path = ShopingApp;
+			sourceTree = "<group>";
+		};
+		3D0A448D29C709AB009C02D5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D0A447929C707D2009C02D5 /* SignInVC.swift */,
+				3D0A447D29C707EA009C02D5 /* LogInVC.swift */,
+				3D0A448529C70963009C02D5 /* MainPageVC.swift */,
+				3D0A448929C7099F009C02D5 /* ProductDetailVC.swift */,
+				3D0A448129C7087A009C02D5 /* ProfileVC.swift */,
+				3D8E06D729CB455600D10151 /* LikedProductsVC.swift */,
+				3D8E06DB29CB457900D10151 /* SavedProductsVC.swift */,
+				3D8E06DF29CB459300D10151 /* CommentVC.swift */,
+				3D53AC2E29CCB1FF009D20D4 /* FlashSaleCell.swift */,
+				3D53AC2A29CCB1E6009D20D4 /* LatestCell.swift */,
+				3DE64F1E29CDCE0F006C4E25 /* ProfileCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3D0A448E29C709BA009C02D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3D0A447A29C707D2009C02D5 /* SignInVC.xib */,
+				3D0A447E29C707EA009C02D5 /* LogInVC.xib */,
+				3D0A448629C70963009C02D5 /* MainPageVC.xib */,
+				3D0A448A29C7099F009C02D5 /* ProductDetailVC.xib */,
+				3D0A448229C7087A009C02D5 /* ProfileVC.xib */,
+				3D8E06D829CB455600D10151 /* LikedProductsVC.xib */,
+				3D8E06DC29CB457900D10151 /* SavedProductsVC.xib */,
+				3D8E06E029CB459300D10151 /* CommentVC.xib */,
+				3D53AC2B29CCB1E6009D20D4 /* LatestCell.xib */,
+				3D53AC2F29CCB1FF009D20D4 /* FlashSaleCell.xib */,
+				3DE64F1F29CDCE0F006C4E25 /* ProfileCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3D0A448F29C709F5009C02D5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3D0A449129C71283009C02D5 /* Montserrat */,
+				3D0A446529C70773009C02D5 /* AppDelegate.swift */,
+				3D8E070329CC2C3200D10151 /* GoogleService-Info.plist */,
+				3D0A446E29C70774009C02D5 /* Assets.xcassets */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3D0A449029C70A1D009C02D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D53AC3229CCC75F009D20D4 /* LatestModel.swift */,
+				3D3E200F29CD808800F426BB /* FlashSaleModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D0A449129C71283009C02D5 /* Montserrat */ = {
+			isa = PBXGroup;
+			children = (
+				3D0A449229C71283009C02D5 /* Montserrat-VariableFont_wght.ttf */,
+				3D0A449329C71283009C02D5 /* Montserrat-Italic-VariableFont_wght.ttf */,
+				3D0A449429C71283009C02D5 /* static */,
+				3D0A44A729C71283009C02D5 /* OFL.txt */,
+				3D0A44A829C71283009C02D5 /* README.txt */,
+			);
+			path = Montserrat;
+			sourceTree = "<group>";
+		};
+		3D0A449429C71283009C02D5 /* static */ = {
+			isa = PBXGroup;
+			children = (
+				3D0A449529C71283009C02D5 /* Montserrat-LightItalic.ttf */,
+				3D0A449629C71283009C02D5 /* Montserrat-Medium.ttf */,
+				3D0A449729C71283009C02D5 /* Montserrat-BoldItalic.ttf */,
+				3D0A449829C71283009C02D5 /* Montserrat-Light.ttf */,
+				3D0A449929C71283009C02D5 /* Montserrat-ThinItalic.ttf */,
+				3D0A449A29C71283009C02D5 /* Montserrat-ExtraLight.ttf */,
+				3D0A449B29C71283009C02D5 /* Montserrat-Thin.ttf */,
+				3D0A449C29C71283009C02D5 /* Montserrat-Bold.ttf */,
+				3D0A449D29C71283009C02D5 /* Montserrat-MediumItalic.ttf */,
+				3D0A449E29C71283009C02D5 /* Montserrat-BlackItalic.ttf */,
+				3D0A449F29C71283009C02D5 /* Montserrat-SemiBold.ttf */,
+				3D0A44A029C71283009C02D5 /* Montserrat-ExtraLightItalic.ttf */,
+				3D0A44A129C71283009C02D5 /* Montserrat-ExtraBold.ttf */,
+				3D0A44A229C71283009C02D5 /* Montserrat-Black.ttf */,
+				3D0A44A329C71283009C02D5 /* Montserrat-Regular.ttf */,
+				3D0A44A429C71283009C02D5 /* Montserrat-Italic.ttf */,
+				3D0A44A529C71283009C02D5 /* Montserrat-SemiBoldItalic.ttf */,
+				3D0A44A629C71283009C02D5 /* Montserrat-ExtraBoldItalic.ttf */,
+			);
+			path = static;
+			sourceTree = "<group>";
+		};
+		FDB02920130625064E5BDCBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07B9A9AD03888A24F93594AC /* Pods_ShopingApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D0A446129C70773009C02D5 /* ShopingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D0A447629C70774009C02D5 /* Build configuration list for PBXNativeTarget "ShopingApp" */;
+			buildPhases = (
+				1C8C751D3D01B1A6ED8C6C8D /* [CP] Check Pods Manifest.lock */,
+				3D0A445E29C70773009C02D5 /* Sources */,
+				3D0A445F29C70773009C02D5 /* Frameworks */,
+				3D0A446029C70773009C02D5 /* Resources */,
+				BF448BF96BC5DD6DD4F30EBF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShopingApp;
+			productName = ShopingApp;
+			productReference = 3D0A446229C70773009C02D5 /* ShopingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D0A445A29C70773009C02D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					3D0A446129C70773009C02D5 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 3D0A445D29C70773009C02D5 /* Build configuration list for PBXProject "ShopingApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D0A445929C70773009C02D5;
+			productRefGroup = 3D0A446329C70773009C02D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D0A446129C70773009C02D5 /* ShopingApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D0A446029C70773009C02D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D8E06DE29CB457900D10151 /* SavedProductsVC.xib in Resources */,
+				3D0A44BC29C71283009C02D5 /* Montserrat-ExtraBoldItalic.ttf in Resources */,
+				3D0A44B929C71283009C02D5 /* Montserrat-Regular.ttf in Resources */,
+				3D0A44AD29C71283009C02D5 /* Montserrat-BoldItalic.ttf in Resources */,
+				3D0A447C29C707D2009C02D5 /* SignInVC.xib in Resources */,
+				3D0A447229C70774009C02D5 /* LaunchScreen.storyboard in Resources */,
+				3D0A448829C70963009C02D5 /* MainPageVC.xib in Resources */,
+				3D0A44B329C71283009C02D5 /* Montserrat-MediumItalic.ttf in Resources */,
+				3D0A44BB29C71283009C02D5 /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				3D0A44B029C71283009C02D5 /* Montserrat-ExtraLight.ttf in Resources */,
+				3D8E06E229CB459300D10151 /* CommentVC.xib in Resources */,
+				3D0A448029C707EA009C02D5 /* LogInVC.xib in Resources */,
+				3D0A44AA29C71283009C02D5 /* Montserrat-Italic-VariableFont_wght.ttf in Resources */,
+				3D0A44A929C71283009C02D5 /* Montserrat-VariableFont_wght.ttf in Resources */,
+				3D0A44BE29C71283009C02D5 /* README.txt in Resources */,
+				3D0A446F29C70774009C02D5 /* Assets.xcassets in Resources */,
+				3D0A44B829C71283009C02D5 /* Montserrat-Black.ttf in Resources */,
+				3D8E070429CC2C3200D10151 /* GoogleService-Info.plist in Resources */,
+				3D53AC2D29CCB1E6009D20D4 /* LatestCell.xib in Resources */,
+				3D53AC3129CCB1FF009D20D4 /* FlashSaleCell.xib in Resources */,
+				3D0A44BD29C71283009C02D5 /* OFL.txt in Resources */,
+				3D0A44AF29C71283009C02D5 /* Montserrat-ThinItalic.ttf in Resources */,
+				3D0A44B229C71283009C02D5 /* Montserrat-Bold.ttf in Resources */,
+				3D0A448429C7087A009C02D5 /* ProfileVC.xib in Resources */,
+				3D0A44BA29C71283009C02D5 /* Montserrat-Italic.ttf in Resources */,
+				3D8E06DA29CB455600D10151 /* LikedProductsVC.xib in Resources */,
+				3D0A44AB29C71283009C02D5 /* Montserrat-LightItalic.ttf in Resources */,
+				3D0A44B529C71283009C02D5 /* Montserrat-SemiBold.ttf in Resources */,
+				3D0A44AC29C71283009C02D5 /* Montserrat-Medium.ttf in Resources */,
+				3D0A448C29C7099F009C02D5 /* ProductDetailVC.xib in Resources */,
+				3D0A44B129C71283009C02D5 /* Montserrat-Thin.ttf in Resources */,
+				3D0A44AE29C71283009C02D5 /* Montserrat-Light.ttf in Resources */,
+				3D0A44B729C71283009C02D5 /* Montserrat-ExtraBold.ttf in Resources */,
+				3DE64F2129CDCE0F006C4E25 /* ProfileCell.xib in Resources */,
+				3D0A44B429C71283009C02D5 /* Montserrat-BlackItalic.ttf in Resources */,
+				3D0A44B629C71283009C02D5 /* Montserrat-ExtraLightItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C8C751D3D01B1A6ED8C6C8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShopingApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF448BF96BC5DD6DD4F30EBF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShopingApp/Pods-ShopingApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShopingApp/Pods-ShopingApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShopingApp/Pods-ShopingApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D0A445E29C70773009C02D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D53AC2C29CCB1E6009D20D4 /* LatestCell.swift in Sources */,
+				3D8E06DD29CB457900D10151 /* SavedProductsVC.swift in Sources */,
+				3D0A448329C7087A009C02D5 /* ProfileVC.swift in Sources */,
+				3D8E06D929CB455600D10151 /* LikedProductsVC.swift in Sources */,
+				3D8E06E129CB459300D10151 /* CommentVC.swift in Sources */,
+				3D0A448B29C7099F009C02D5 /* ProductDetailVC.swift in Sources */,
+				3D0A448729C70963009C02D5 /* MainPageVC.swift in Sources */,
+				3D0A447B29C707D2009C02D5 /* SignInVC.swift in Sources */,
+				3D53AC3029CCB1FF009D20D4 /* FlashSaleCell.swift in Sources */,
+				3D0A446629C70773009C02D5 /* AppDelegate.swift in Sources */,
+				3D53AC3329CCC75F009D20D4 /* LatestModel.swift in Sources */,
+				3D3E201029CD808800F426BB /* FlashSaleModel.swift in Sources */,
+				3D0A447F29C707EA009C02D5 /* LogInVC.swift in Sources */,
+				3DE64F2029CDCE0F006C4E25 /* ProfileCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3D0A447029C70774009C02D5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D0A447129C70774009C02D5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D0A447429C70774009C02D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D0A447529C70774009C02D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D0A447729C70774009C02D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A829850F1B6EBB0A4894233 /* Pods-ShopingApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7W6F238426;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShopingApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = myCompany.ShopingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D0A447829C70774009C02D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC18E03F261AEE9D6CA7480C /* Pods-ShopingApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7W6F238426;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShopingApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = myCompany.ShopingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D0A445D29C70773009C02D5 /* Build configuration list for PBXProject "ShopingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D0A447429C70774009C02D5 /* Debug */,
+				3D0A447529C70774009C02D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D0A447629C70774009C02D5 /* Build configuration list for PBXNativeTarget "ShopingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D0A447729C70774009C02D5 /* Debug */,
+				3D0A447829C70774009C02D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D0A445A29C70773009C02D5 /* Project object */;
+}

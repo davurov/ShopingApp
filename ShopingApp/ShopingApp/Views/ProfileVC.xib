@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+        <array key="Montserrat-VariableFont_wght.ttf">
+            <string>MontserratRoman-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileVC" customModule="ShopingApp" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="6qL-jC-IPu" id="EXy-mC-eTk"/>
+                <outlet property="userImage" destination="dba-xO-l2O" id="mBC-Nn-gxh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsD-LH-QAr">
+                    <rect key="frame" x="164.66666666666666" y="69" width="63.666666666666657" height="23.333333333333329"/>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dba-xO-l2O">
+                    <rect key="frame" x="166.66666666666666" y="114.33333333333331" width="60" height="56.666666666666686"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="UIb-rr-HvJ"/>
+                        <constraint firstAttribute="width" constant="60" id="ZI7-nd-Hui"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arC-g9-xR8">
+                    <rect key="frame" x="166.66666666666666" y="112.33333333333331" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="MS3-Uw-gec"/>
+                        <constraint firstAttribute="height" constant="60" id="ijY-d8-H0v"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="userImagePressed:" destination="-1" eventType="touchUpInside" id="uRF-Wa-PWW"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change photo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Yc-RQ-0YX">
+                    <rect key="frame" x="160.33333333333334" y="182.33333333333334" width="72.333333333333343" height="11.666666666666657"/>
+                    <fontDescription key="fontDescription" name="MontserratRoman-Regular" family="Montserrat" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chuppy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n42-Re-seZ">
+                    <rect key="frame" x="162.33333333333334" y="214" width="68.666666666666657" height="21"/>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2g-Qm-3RE">
+                    <rect key="frame" x="51.666666666666657" y="265" width="290" height="46"/>
+                    <color key="backgroundColor" red="0.31372550129999999" green="0.32941177490000001" blue="0.8156862855" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="290" id="c1y-z8-JR8"/>
+                        <constraint firstAttribute="height" constant="46" id="fDm-Qo-6mS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="         Upload item">
+                        <imageReference key="image" image="square.and.arrow.up" catalog="system" symbolScale="medium" variableValue="0.60000000000000009"/>
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="15" scale="small" weight="bold"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="black" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6qL-jC-IPu">
+                    <rect key="frame" x="30" y="311" width="333" height="541"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6qL-jC-IPu" secondAttribute="trailing" constant="30" id="1Ck-oy-gAj"/>
+                <constraint firstItem="rsD-LH-QAr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="B55-mK-2IZ"/>
+                <constraint firstItem="4Yc-RQ-0YX" firstAttribute="top" secondItem="arC-g9-xR8" secondAttribute="bottom" constant="10" id="Cyr-GU-s2z"/>
+                <constraint firstItem="4Yc-RQ-0YX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Dll-Kl-sCf"/>
+                <constraint firstItem="dba-xO-l2O" firstAttribute="top" secondItem="rsD-LH-QAr" secondAttribute="bottom" constant="20" id="GED-Bp-jTj"/>
+                <constraint firstItem="n42-Re-seZ" firstAttribute="top" secondItem="4Yc-RQ-0YX" secondAttribute="bottom" constant="20" id="Ga8-kM-cYq"/>
+                <constraint firstItem="6qL-jC-IPu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="QPz-2D-o7G"/>
+                <constraint firstItem="arC-g9-xR8" firstAttribute="top" secondItem="rsD-LH-QAr" secondAttribute="bottom" constant="20" id="U2R-hH-Jlf"/>
+                <constraint firstItem="rsD-LH-QAr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XTZ-37-FQE"/>
+                <constraint firstItem="6qL-jC-IPu" firstAttribute="top" secondItem="f2g-Qm-3RE" secondAttribute="bottom" id="bgv-ys-jan"/>
+                <constraint firstItem="dba-xO-l2O" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jB0-6W-hm0"/>
+                <constraint firstAttribute="bottom" secondItem="6qL-jC-IPu" secondAttribute="bottom" id="orS-4w-5cc"/>
+                <constraint firstItem="n42-Re-seZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qZT-ug-pLe"/>
+                <constraint firstItem="f2g-Qm-3RE" firstAttribute="top" secondItem="n42-Re-seZ" secondAttribute="bottom" constant="30" id="y1e-8Z-snL"/>
+                <constraint firstItem="arC-g9-xR8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yIb-q9-gcS"/>
+                <constraint firstItem="f2g-Qm-3RE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zpI-uw-Be5"/>
+            </constraints>
+            <point key="canvasLocation" x="52.671755725190835" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
