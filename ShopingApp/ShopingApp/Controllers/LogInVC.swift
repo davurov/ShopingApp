@@ -81,6 +81,7 @@ class LogInVC: UIViewController {
                     tabBarController.tabBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
                     tabBarController.viewControllers = [mainPageVC, likedProductsVC, savedProductsVC, commentVC, profileVC]
                     tabBarController.modalPresentationStyle = .overFullScreen
+                    UserDefaults.standard.set(email, forKey: "email")
                     self!.present(tabBarController, animated: true)
                 } else {
                     self!.errorLbl.text = "❗️" + error!.localizedDescription

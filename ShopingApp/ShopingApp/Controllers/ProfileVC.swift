@@ -11,9 +11,11 @@ import FirebaseAuth
 class ProfileVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    
+    @IBOutlet weak var UserName: UILabel!
     @IBOutlet weak var userImage: UIImageView!
+    
     let indicators = [0,1,3,4]
+    let email = UserDefaults.standard.string(forKey: "email")
     let names = ["Trade store", "Payment method", "Balance", "Trade history", "Restore Purchase", "Help", "Log out"]
     let imagePicker = UIImagePickerController()
     
@@ -21,6 +23,14 @@ class ProfileVC: UIViewController {
         super.viewDidLoad()
         setUpTableView()
         setUpImagePicker()
+        UserName.text = UserDefaults.standard.string(forKey: "name")
+        
+        if let fEmail = email {
+            if let photoData = UserDefaults.standard.data(forKey: fEmail) {
+                userImage.image = UIImage(data: photoData)
+            }
+        }
+        
     }
 
     func setUpTableView() {
@@ -99,8 +109,10 @@ extension ProfileVC: UIImagePickerControllerDelegate, UINavigationControllerDele
         if let userPickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             userImage.image = userPickedImage
             let imageData = userPickedImage.pngData()
-            UserDefaults.standard.set(imageData, forKey: "photo")
             
+            if let fEmail = email {
+                UserDefaults.standard.set(imageData, forKey: fEmail)
+            }
             imagePicker.dismiss(animated: true)
         }
         
