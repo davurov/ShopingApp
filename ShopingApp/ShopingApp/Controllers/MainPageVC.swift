@@ -132,6 +132,21 @@ extension MainPageVC: UICollectionViewDataSource, UICollectionViewDelegate {
         let vc = ProductDetailVC(nibName: "ProductDetailVC", bundle: nil)
         vc.modalPresentationStyle = .overFullScreen
         present(vc, animated: true)
+        if collectionView == self.latestCollView {
+            vc.productName.text = latestProducts[indexPath.row].name
+            vc.ProductPrice.text = "$ \(latestProducts[indexPath.row].price)"
+            vc.mainPhoto.loadFrom(URLAddress: latestProducts[indexPath.row].imageURL)
+            vc.firstImage.loadFrom(URLAddress: latestProducts[indexPath.row].imageURL)
+            vc.secondImage.loadFrom(URLAddress: latestProducts[indexPath.row].imageURL)
+            vc.thirdImage.loadFrom(URLAddress: latestProducts[indexPath.row].imageURL)
+        } else {
+            vc.productName.text = flashSaleProductd[indexPath.row].name
+            vc.ProductPrice.text = "$ \(flashSaleProductd[indexPath.row].price)"
+            vc.mainPhoto.loadFrom(URLAddress: flashSaleProductd[indexPath.row].imageURL)
+            vc.firstImage.loadFrom(URLAddress: flashSaleProductd[indexPath.row].imageURL)
+            vc.secondImage.loadFrom(URLAddress: flashSaleProductd[indexPath.row].imageURL)
+            vc.thirdImage.loadFrom(URLAddress: flashSaleProductd[indexPath.row].imageURL)
+        }
     }
     
 }
