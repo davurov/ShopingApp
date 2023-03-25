@@ -27,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let savedProductsVC = SavedProductsVC(nibName: "SavedProductsVC", bundle: nil)
             let commentVC = CommentVC(nibName: "CommentVC", bundle: nil)
             let profileVC = ProfileVC(nibName: "ProfileVC", bundle: nil)
+            let productDetailVC = ProductDetailVC(nibName: "ProductDetailVC", bundle: nil)
             
             let item1 = UITabBarItem()
             let item2 = UITabBarItem()
@@ -54,7 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             tabBarController.tabBar.barStyle = .default
             tabBarController.tabBar.layer.cornerRadius = 20
             tabBarController.tabBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-            tabBarController.viewControllers = [mainPageVC, likedProductsVC, savedProductsVC, commentVC, profileVC]
+            tabBarController.viewControllers = [mainPageVC, likedProductsVC, savedProductsVC, commentVC, profileVC, productDetailVC]
         } else {
             let signInVC = SignInVC(nibName: "SignInVC", bundle: nil)
             window?.rootViewController = signInVC

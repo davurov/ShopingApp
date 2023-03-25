@@ -128,6 +128,12 @@ extension MainPageVC: UICollectionViewDataSource, UICollectionViewDelegate {
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = ProductDetailVC(nibName: "ProductDetailVC", bundle: nil)
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
+    }
+    
 }
 
 extension MainPageVC: UICollectionViewDelegateFlowLayout {
