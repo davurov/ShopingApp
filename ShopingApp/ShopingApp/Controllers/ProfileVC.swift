@@ -23,11 +23,15 @@ class ProfileVC: UIViewController {
         super.viewDidLoad()
         setUpTableView()
         setUpImagePicker()
-        UserName.text = UserDefaults.standard.string(forKey: "name")
         
         if let fEmail = email {
             if let photoData = UserDefaults.standard.data(forKey: fEmail) {
                 userImage.image = UIImage(data: photoData)
+            } else if let userName = UserDefaults.standard.string(forKey: "\(fEmail)name") {
+                UserName.text = userName
+            } else {
+                userImage.image = UIImage(systemName: "person.fill")
+                UserName.text = "cLient" + "\(Int.random(in: 1...123456))"
             }
         }
         

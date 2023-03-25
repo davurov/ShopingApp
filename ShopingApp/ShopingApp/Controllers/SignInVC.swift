@@ -75,8 +75,8 @@ class SignInVC: UIViewController {
                         tabBarController.tabBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
                         tabBarController.viewControllers = [mainPageVC, likedProductsVC, savedProductsVC, commentVC, profileVC]
                         tabBarController.modalPresentationStyle = .overFullScreen
-                        UserDefaults.standard.set(firstNameTf.text, forKey: "name")
                         UserDefaults.standard.set(emailTf.text, forKey: "email")
+                        UserDefaults.standard.set(firstNameTf.text, forKey: "\(emailTf.text!)name")
                         self.present(tabBarController, animated: true)
                     } else {
                         errorLbl.text = "❗️" + error!.localizedDescription
