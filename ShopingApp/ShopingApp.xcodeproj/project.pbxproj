@@ -50,11 +50,11 @@
 		3D53AC3329CCC75F009D20D4 /* LatestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D53AC3229CCC75F009D20D4 /* LatestModel.swift */; };
 		3D8E06D929CB455600D10151 /* LikedProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E06D729CB455600D10151 /* LikedProductsVC.swift */; };
 		3D8E06DA29CB455600D10151 /* LikedProductsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D8E06D829CB455600D10151 /* LikedProductsVC.xib */; };
-		3D8E06DD29CB457900D10151 /* SavedProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E06DB29CB457900D10151 /* SavedProductsVC.swift */; };
-		3D8E06DE29CB457900D10151 /* SavedProductsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D8E06DC29CB457900D10151 /* SavedProductsVC.xib */; };
 		3D8E06E129CB459300D10151 /* CommentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E06DF29CB459300D10151 /* CommentVC.swift */; };
 		3D8E06E229CB459300D10151 /* CommentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D8E06E029CB459300D10151 /* CommentVC.xib */; };
 		3D8E070429CC2C3200D10151 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D8E070329CC2C3200D10151 /* GoogleService-Info.plist */; };
+		3DA4651B29CF700E003D15C4 /* SavedProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4651929CF700E003D15C4 /* SavedProductsVC.swift */; };
+		3DA4651C29CF700E003D15C4 /* SavedProductsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DA4651A29CF700E003D15C4 /* SavedProductsVC.xib */; };
 		3DE64F2029CDCE0F006C4E25 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE64F1E29CDCE0F006C4E25 /* ProfileCell.swift */; };
 		3DE64F2129CDCE0F006C4E25 /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DE64F1F29CDCE0F006C4E25 /* ProfileCell.xib */; };
 		5B74018A2C8D95A27F284CE4 /* Pods_ShopingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B9A9AD03888A24F93594AC /* Pods_ShopingApp.framework */; };
@@ -107,11 +107,11 @@
 		3D53AC3229CCC75F009D20D4 /* LatestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestModel.swift; sourceTree = "<group>"; };
 		3D8E06D729CB455600D10151 /* LikedProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedProductsVC.swift; sourceTree = "<group>"; };
 		3D8E06D829CB455600D10151 /* LikedProductsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikedProductsVC.xib; sourceTree = "<group>"; };
-		3D8E06DB29CB457900D10151 /* SavedProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedProductsVC.swift; sourceTree = "<group>"; };
-		3D8E06DC29CB457900D10151 /* SavedProductsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SavedProductsVC.xib; sourceTree = "<group>"; };
 		3D8E06DF29CB459300D10151 /* CommentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentVC.swift; sourceTree = "<group>"; };
 		3D8E06E029CB459300D10151 /* CommentVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentVC.xib; sourceTree = "<group>"; };
 		3D8E070329CC2C3200D10151 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3DA4651929CF700E003D15C4 /* SavedProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedProductsVC.swift; sourceTree = "<group>"; };
+		3DA4651A29CF700E003D15C4 /* SavedProductsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SavedProductsVC.xib; sourceTree = "<group>"; };
 		3DE64F1E29CDCE0F006C4E25 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		3DE64F1F29CDCE0F006C4E25 /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
 		6A829850F1B6EBB0A4894233 /* Pods-ShopingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopingApp.debug.xcconfig"; path = "Target Support Files/Pods-ShopingApp/Pods-ShopingApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -179,7 +179,7 @@
 				3D0A448929C7099F009C02D5 /* ProductDetailVC.swift */,
 				3D0A448129C7087A009C02D5 /* ProfileVC.swift */,
 				3D8E06D729CB455600D10151 /* LikedProductsVC.swift */,
-				3D8E06DB29CB457900D10151 /* SavedProductsVC.swift */,
+				3DA4651929CF700E003D15C4 /* SavedProductsVC.swift */,
 				3D8E06DF29CB459300D10151 /* CommentVC.swift */,
 				3D53AC2E29CCB1FF009D20D4 /* FlashSaleCell.swift */,
 				3D53AC2A29CCB1E6009D20D4 /* LatestCell.swift */,
@@ -197,7 +197,7 @@
 				3D0A448A29C7099F009C02D5 /* ProductDetailVC.xib */,
 				3D0A448229C7087A009C02D5 /* ProfileVC.xib */,
 				3D8E06D829CB455600D10151 /* LikedProductsVC.xib */,
-				3D8E06DC29CB457900D10151 /* SavedProductsVC.xib */,
+				3DA4651A29CF700E003D15C4 /* SavedProductsVC.xib */,
 				3D8E06E029CB459300D10151 /* CommentVC.xib */,
 				3D53AC2B29CCB1E6009D20D4 /* LatestCell.xib */,
 				3D53AC2F29CCB1FF009D20D4 /* FlashSaleCell.xib */,
@@ -331,7 +331,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D8E06DE29CB457900D10151 /* SavedProductsVC.xib in Resources */,
 				3D0A44BC29C71283009C02D5 /* Montserrat-ExtraBoldItalic.ttf in Resources */,
 				3D0A44B929C71283009C02D5 /* Montserrat-Regular.ttf in Resources */,
 				3D0A44AD29C71283009C02D5 /* Montserrat-BoldItalic.ttf in Resources */,
@@ -356,6 +355,7 @@
 				3D0A44B229C71283009C02D5 /* Montserrat-Bold.ttf in Resources */,
 				3D0A448429C7087A009C02D5 /* ProfileVC.xib in Resources */,
 				3D0A44BA29C71283009C02D5 /* Montserrat-Italic.ttf in Resources */,
+				3DA4651C29CF700E003D15C4 /* SavedProductsVC.xib in Resources */,
 				3D8E06DA29CB455600D10151 /* LikedProductsVC.xib in Resources */,
 				3D0A44AB29C71283009C02D5 /* Montserrat-LightItalic.ttf in Resources */,
 				3D0A44B529C71283009C02D5 /* Montserrat-SemiBold.ttf in Resources */,
@@ -420,8 +420,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D53AC2C29CCB1E6009D20D4 /* LatestCell.swift in Sources */,
-				3D8E06DD29CB457900D10151 /* SavedProductsVC.swift in Sources */,
 				3D0A448329C7087A009C02D5 /* ProfileVC.swift in Sources */,
+				3DA4651B29CF700E003D15C4 /* SavedProductsVC.swift in Sources */,
 				3D8E06D929CB455600D10151 /* LikedProductsVC.swift in Sources */,
 				3D8E06E129CB459300D10151 /* CommentVC.swift in Sources */,
 				3D0A448B29C7099F009C02D5 /* ProductDetailVC.swift in Sources */,

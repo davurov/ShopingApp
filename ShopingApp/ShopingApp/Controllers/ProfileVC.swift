@@ -15,7 +15,6 @@ class ProfileVC: UIViewController {
     @IBOutlet weak var userImage: UIImageView!
     
     let indicators = [0,1,3,4]
-    let email = UserDefaults.standard.string(forKey: "email")
     let names = ["Trade store", "Payment method", "Balance", "Trade history", "Restore Purchase", "Help", "Log out"]
     let imagePicker = UIImagePickerController()
     
@@ -23,9 +22,11 @@ class ProfileVC: UIViewController {
         super.viewDidLoad()
         setUpTableView()
         setUpImagePicker()
+        let email = UserDefaults.standard.string(forKey: "email")
         
         if let fEmail = email {
             if let photoData = UserDefaults.standard.data(forKey: fEmail) {
+                print(email)
                 userImage.image = UIImage(data: photoData)
             } else if let userName = UserDefaults.standard.string(forKey: "\(fEmail)name") {
                 UserName.text = userName
@@ -110,6 +111,7 @@ extension ProfileVC: UIImagePickerControllerDelegate, UINavigationControllerDele
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
+        let email = UserDefaults.standard.string(forKey: "email")
         if let userPickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             userImage.image = userPickedImage
             let imageData = userPickedImage.pngData()

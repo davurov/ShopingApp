@@ -31,13 +31,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsD-LH-QAr">
-                    <rect key="frame" x="169.66666666666666" y="10" width="53.666666666666657" height="23.333333333333329"/>
+                    <rect key="frame" x="169.66666666666666" y="69" width="53.666666666666657" height="23.333333333333329"/>
                     <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="19"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dba-xO-l2O">
-                    <rect key="frame" x="166.66666666666666" y="55.333333333333336" width="60" height="56.666666666666679"/>
+                    <rect key="frame" x="166.66666666666666" y="114.33333333333331" width="60" height="56.666666666666657"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="UIb-rr-HvJ"/>
                         <constraint firstAttribute="width" constant="60" id="ZI7-nd-Hui"/>
@@ -49,7 +49,7 @@
                     </userDefinedRuntimeAttributes>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arC-g9-xR8">
-                    <rect key="frame" x="166.66666666666666" y="53.333333333333343" width="60" height="60"/>
+                    <rect key="frame" x="166.66666666666666" y="112.33333333333331" width="60" height="60"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="60" id="MS3-Uw-gec"/>
                         <constraint firstAttribute="height" constant="60" id="ijY-d8-H0v"/>
@@ -66,19 +66,19 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change photo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Yc-RQ-0YX">
-                    <rect key="frame" x="164.66666666666666" y="123.33333333333333" width="64" height="11.666666666666671"/>
+                    <rect key="frame" x="164.66666666666666" y="182.33333333333334" width="64" height="11.666666666666657"/>
                     <fontDescription key="fontDescription" name="MontserratRoman-Regular" family="Montserrat" pointSize="10"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chuppy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n42-Re-seZ">
-                    <rect key="frame" x="166.66666666666666" y="155" width="60" height="20"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n42-Re-seZ">
+                    <rect key="frame" x="196.66666666666666" y="214" width="0.0" height="0.0"/>
                     <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2g-Qm-3RE">
-                    <rect key="frame" x="51.666666666666657" y="205" width="290" height="46"/>
+                    <rect key="frame" x="51.666666666666657" y="244" width="290" height="46"/>
                     <color key="backgroundColor" red="0.31372550129999999" green="0.32941177490000001" blue="0.8156862855" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="290" id="c1y-z8-JR8"/>
@@ -98,7 +98,7 @@
                     </userDefinedRuntimeAttributes>
                 </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="black" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6qL-jC-IPu">
-                    <rect key="frame" x="30" y="251" width="333" height="601"/>
+                    <rect key="frame" x="30" y="290" width="333" height="562"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
             </subviews>
