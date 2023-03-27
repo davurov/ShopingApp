@@ -16,6 +16,8 @@ class LatestCell: UICollectionViewCell {
     @IBOutlet weak var priceLbl: UILabel!
     @IBOutlet weak var productImage: UIImageView!
     
+    @IBOutlet weak var addBtn: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         

@@ -132,6 +132,7 @@ extension MainPageVC: UICollectionViewDataSource, UICollectionViewDelegate {
         let vc = ProductDetailVC(nibName: "ProductDetailVC", bundle: nil)
         vc.modalPresentationStyle = .overFullScreen
         present(vc, animated: true)
+        
         if collectionView == self.latestCollView {
             vc.productName.text = latestProducts[indexPath.row].name
             vc.ProductPrice.text = "$ \(latestProducts[indexPath.row].price)"
@@ -183,3 +184,4 @@ extension UIImageView {
           }
     }
 }
+

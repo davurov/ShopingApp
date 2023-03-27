@@ -6,10 +6,9 @@
 //
 
 import UIKit
-
 class ProductDetailVC: UIViewController {
     
-    
+    @IBOutlet weak var savedView: UIView!
     @IBOutlet weak var mainPhoto: UIImageView!
     @IBOutlet weak var thirdImage: UIImageView!
     @IBOutlet weak var secondImage: UIImageView!
@@ -17,6 +16,7 @@ class ProductDetailVC: UIViewController {
     @IBOutlet weak var productName: UILabel!
     @IBOutlet weak var ProductPrice: UILabel!
     @IBOutlet var productCollors: [UIButton]!
+    var product = Product()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,4 +79,19 @@ class ProductDetailVC: UIViewController {
         }
         
     }
+    
+    @IBAction func addToCartPressed(_ sender: Any) {
+        guard productName.text != nil, mainPhoto.image != nil, ProductPrice.text != nil else {
+            fatalError("find nil")
+        }
+        
+        ProductData.products.append(Product(name: productName.text!, price: ProductPrice.text!, photo: mainPhoto.image!))
+        self.savedView.transform = CGAffineTransform.identity
+        self.savedView.isHidden = false
+        
+        UIView.animate(withDuration: 1) {
+            self.savedView.transform = CGAffineTransform(translationX: 0, y: -200)
+        }
+    }
+    
 }

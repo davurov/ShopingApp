@@ -26,7 +26,6 @@ class ProfileVC: UIViewController {
         
         if let fEmail = email {
             if let photoData = UserDefaults.standard.data(forKey: fEmail) {
-                print(email)
                 userImage.image = UIImage(data: photoData)
             } else if let userName = UserDefaults.standard.string(forKey: "\(fEmail)name") {
                 UserName.text = userName

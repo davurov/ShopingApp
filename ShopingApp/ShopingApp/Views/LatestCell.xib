@@ -33,13 +33,13 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGT-bf-VU7">
-                                <rect key="frame" x="10" y="148.66666666666666" width="34.333333333333336" height="14"/>
+                                <rect key="frame" x="10.000000000000002" y="148.66666666666666" width="29.666666666666671" height="14"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MtS-Zn-7HT">
-                                <rect key="frame" x="10" y="217" width="31" height="13"/>
+                                <rect key="frame" x="10" y="217" width="27" height="13"/>
                                 <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="11"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -113,6 +113,7 @@
             </constraints>
             <size key="customSize" width="187" height="235"/>
             <connections>
+                <outlet property="addBtn" destination="iro-We-csJ" id="kRq-yv-EQO"/>
                 <outlet property="categoryBtn" destination="bOH-T6-4Gu" id="Sb2-xs-RO9"/>
                 <outlet property="nameLbl" destination="tGT-bf-VU7" id="Hzu-HO-k9a"/>
                 <outlet property="priceLbl" destination="MtS-Zn-7HT" id="PN8-rg-Xwo"/>

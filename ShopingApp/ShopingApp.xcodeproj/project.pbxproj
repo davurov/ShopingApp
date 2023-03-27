@@ -48,6 +48,7 @@
 		3D53AC3029CCB1FF009D20D4 /* FlashSaleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D53AC2E29CCB1FF009D20D4 /* FlashSaleCell.swift */; };
 		3D53AC3129CCB1FF009D20D4 /* FlashSaleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D53AC2F29CCB1FF009D20D4 /* FlashSaleCell.xib */; };
 		3D53AC3329CCC75F009D20D4 /* LatestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D53AC3229CCC75F009D20D4 /* LatestModel.swift */; };
+		3D615A9929D1F18B007D19D3 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D615A9829D1F18B007D19D3 /* Product.swift */; };
 		3D8E06D929CB455600D10151 /* LikedProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E06D729CB455600D10151 /* LikedProductsVC.swift */; };
 		3D8E06DA29CB455600D10151 /* LikedProductsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D8E06D829CB455600D10151 /* LikedProductsVC.xib */; };
 		3D8E06E129CB459300D10151 /* CommentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E06DF29CB459300D10151 /* CommentVC.swift */; };
@@ -105,6 +106,7 @@
 		3D53AC2E29CCB1FF009D20D4 /* FlashSaleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashSaleCell.swift; sourceTree = "<group>"; };
 		3D53AC2F29CCB1FF009D20D4 /* FlashSaleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlashSaleCell.xib; sourceTree = "<group>"; };
 		3D53AC3229CCC75F009D20D4 /* LatestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestModel.swift; sourceTree = "<group>"; };
+		3D615A9829D1F18B007D19D3 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		3D8E06D729CB455600D10151 /* LikedProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedProductsVC.swift; sourceTree = "<group>"; };
 		3D8E06D829CB455600D10151 /* LikedProductsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikedProductsVC.xib; sourceTree = "<group>"; };
 		3D8E06DF29CB459300D10151 /* CommentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentVC.swift; sourceTree = "<group>"; };
@@ -177,9 +179,9 @@
 				3D0A447D29C707EA009C02D5 /* LogInVC.swift */,
 				3D0A448529C70963009C02D5 /* MainPageVC.swift */,
 				3D0A448929C7099F009C02D5 /* ProductDetailVC.swift */,
+				3DA4651929CF700E003D15C4 /* SavedProductsVC.swift */,
 				3D0A448129C7087A009C02D5 /* ProfileVC.swift */,
 				3D8E06D729CB455600D10151 /* LikedProductsVC.swift */,
-				3DA4651929CF700E003D15C4 /* SavedProductsVC.swift */,
 				3D8E06DF29CB459300D10151 /* CommentVC.swift */,
 				3D53AC2E29CCB1FF009D20D4 /* FlashSaleCell.swift */,
 				3D53AC2A29CCB1E6009D20D4 /* LatestCell.swift */,
@@ -222,6 +224,7 @@
 			children = (
 				3D53AC3229CCC75F009D20D4 /* LatestModel.swift */,
 				3D3E200F29CD808800F426BB /* FlashSaleModel.swift */,
+				3D615A9829D1F18B007D19D3 /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 			files = (
 				3D53AC2C29CCB1E6009D20D4 /* LatestCell.swift in Sources */,
 				3D0A448329C7087A009C02D5 /* ProfileVC.swift in Sources */,
+				3D615A9929D1F18B007D19D3 /* Product.swift in Sources */,
 				3DA4651B29CF700E003D15C4 /* SavedProductsVC.swift in Sources */,
 				3D8E06D929CB455600D10151 /* LikedProductsVC.swift in Sources */,
 				3D8E06E129CB459300D10151 /* CommentVC.swift in Sources */,
