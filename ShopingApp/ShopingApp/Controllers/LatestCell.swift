@@ -22,5 +22,18 @@ class LatestCell: UICollectionViewCell {
         super.awakeFromNib()
         
     }
-
+    
+    @IBAction func addBtnPressed(_ sender: Any) {
+        ProductData.products.append(Product(name:nameLbl.text ?? "", price: priceLbl.text ?? "", photo: productImage.image))
+        let normal = self.addBtn.backgroundColor
+        UIView.animate(withDuration: 1) {
+            self.addBtn.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+            self.addBtn.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
+            self.addBtn.backgroundColor = .systemGreen
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now()+1) {
+            self.addBtn.backgroundColor = normal
+            self.addBtn.transform = CGAffineTransform.identity
+        }
+    }
 }

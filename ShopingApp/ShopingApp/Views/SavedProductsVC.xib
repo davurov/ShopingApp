@@ -34,21 +34,21 @@
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZKS-SL-GTX">
-                            <rect key="frame" x="71.666666666666686" y="376" width="250" height="100"/>
+                            <rect key="frame" x="31.666666666666657" y="376" width="330" height="100"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="M7o-hh-Luh">
-                                    <rect key="frame" x="0.0" y="0.0" width="250" height="100"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="330" height="100"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exclamationmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YZR-FU-QBe">
-                                            <rect key="frame" x="94.999999999999986" y="1" width="60.000000000000014" height="58.666666666666671"/>
+                                            <rect key="frame" x="135" y="1" width="60" height="58.666666666666671"/>
                                             <color key="tintColor" systemColor="systemPinkColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="60" id="AV4-eo-REW"/>
                                                 <constraint firstAttribute="width" constant="60" id="gGY-jR-ZF4"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="252" horizontalCompressionResistancePriority="754" verticalCompressionResistancePriority="752" text="Nothing Founded" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOy-mZ-r0y">
-                                            <rect key="frame" x="42.666666666666657" y="60" width="164.66666666666666" height="40"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="252" horizontalCompressionResistancePriority="754" verticalCompressionResistancePriority="752" text="You don't have saved products yet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOy-mZ-r0y">
+                                            <rect key="frame" x="1" y="60" width="327.66666666666669" height="40"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -63,7 +63,7 @@
                                 <constraint firstAttribute="trailing" secondItem="M7o-hh-Luh" secondAttribute="trailing" id="ifi-87-fWV"/>
                                 <constraint firstAttribute="bottom" secondItem="M7o-hh-Luh" secondAttribute="bottom" id="l5l-fZ-MKQ"/>
                                 <constraint firstItem="M7o-hh-Luh" firstAttribute="top" secondItem="ZKS-SL-GTX" secondAttribute="top" id="wHO-iA-c39"/>
-                                <constraint firstAttribute="width" constant="250" id="xN5-sY-ucW"/>
+                                <constraint firstAttribute="width" constant="330" id="xN5-sY-ucW"/>
                             </constraints>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="Laywr.cornerRadius">

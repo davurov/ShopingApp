@@ -32,7 +32,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="236" height="327"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ct9-jk-y2I">
-                                <rect key="frame" x="10" y="241.33333333333334" width="82.333333333333329" height="18.333333333333343"/>
+                                <rect key="frame" x="10" y="242" width="82.333333333333329" height="17.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="82.200000000000003" id="Rtb-oS-fAG"/>
                                 </constraints>
@@ -41,7 +41,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmf-Vt-am3">
-                                <rect key="frame" x="10" y="299.66666666666669" width="39.333333333333336" height="17.333333333333314"/>
+                                <rect key="frame" x="10" y="299.66666666666669" width="34.333333333333336" height="17.333333333333314"/>
                                 <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -63,6 +63,9 @@
                                         <integer key="value" value="14"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="likeBtnPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="D7X-ZM-Fg6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dN-SV-PD3">
                                 <rect key="frame" x="191" y="282" width="35" height="35"/>
@@ -81,6 +84,9 @@
                                         <real key="value" value="17.5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addBtnPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="wop-m1-Kwt"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vector-14" translatesAutoresizingMaskIntoConstraints="NO" id="uaG-NC-KDJ">
                                 <rect key="frame" x="10" y="10" width="24" height="24"/>
@@ -108,7 +114,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGL-r0-fXX">
-                                <rect key="frame" x="10" y="201.33333333333334" width="50" height="20"/>
+                                <rect key="frame" x="10" y="202" width="50" height="20"/>
                                 <color key="backgroundColor" red="0.76862745098039209" green="0.76862745098039209" blue="0.76862745098039209" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="2F5-pB-kVn"/>
@@ -164,8 +170,10 @@
             </constraints>
             <size key="customSize" width="236" height="327"/>
             <connections>
+                <outlet property="addBtn" destination="6dN-SV-PD3" id="zxu-pF-qBk"/>
                 <outlet property="categoryBtn" destination="hGL-r0-fXX" id="jdI-BT-9fR"/>
                 <outlet property="discountLbl" destination="sZv-J2-fX4" id="yvt-ya-2iY"/>
+                <outlet property="likeBtn" destination="Fv3-19-Kx2" id="cl2-DC-Yeu"/>
                 <outlet property="nameLbl" destination="Ct9-jk-y2I" id="bVy-G7-cwr"/>
                 <outlet property="priceLbl" destination="wmf-Vt-am3" id="ZX8-3u-8Fa"/>
                 <outlet property="productImage" destination="Fji-00-Txt" id="dEq-5R-QSh"/>
