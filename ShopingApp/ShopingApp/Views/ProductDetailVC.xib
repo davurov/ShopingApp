@@ -17,6 +17,7 @@
             <connections>
                 <outlet property="ProductPrice" destination="9oV-uT-1AE" id="5V9-WP-8ph"/>
                 <outlet property="firstImage" destination="Xbr-Sa-xMB" id="Rv6-Lp-RK1"/>
+                <outlet property="likeBtn" destination="K2R-RM-eVk" id="SYN-zX-xnD"/>
                 <outlet property="mainPhoto" destination="3zt-yZ-bkS" id="aAk-vy-gce"/>
                 <outlet property="productName" destination="e33-Vc-abs" id="dGA-0Y-bLH"/>
                 <outlet property="savedView" destination="Bo8-Vb-Hyt" id="RV4-3b-aKO"/>
@@ -49,6 +50,9 @@
                                     <buttonConfiguration key="configuration" style="plain" image="shareplay" catalog="system">
                                         <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="semibold"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="sharePressed:" destination="-1" eventType="touchUpInside" id="nqn-eN-ATy"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2R-RM-eVk">
                                     <rect key="frame" x="0.0" y="0.0" width="42" height="38"/>
@@ -57,6 +61,9 @@
                                     <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system">
                                         <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="semibold"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="likePressed:" destination="-1" eventType="touchUpInside" id="CnI-w1-oLV"/>
+                                    </connections>
                                 </button>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gPZ-D3-N9e">
                                     <rect key="frame" x="15" y="47" width="12" height="1"/>

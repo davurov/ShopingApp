@@ -11,6 +11,7 @@ class FlashSaleCell: UICollectionViewCell {
     
     var sum = 0
     @IBOutlet weak var addBtn: UIButton!
+    @IBOutlet weak var statusImage: UIImageView!
     @IBOutlet weak var discountLbl: UIButton!
     @IBOutlet weak var categoryBtn: UIButton!
     @IBOutlet weak var nameLbl: UILabel!
@@ -40,12 +41,14 @@ class FlashSaleCell: UICollectionViewCell {
     @IBAction func likeBtnPressed(_ sender: Any) {
         sum += 1
         if sum % 2 != 0 {
+            LikedProductData.products.append(LikedProduct(name: nameLbl.text ?? "", price: priceLbl.text ?? "", photo: productImage.image))
             likeBtn.backgroundColor = .clear
             likeBtn.setImage(UIImage(systemName: "heart.fill"), for: .normal)
             UIView.animate(withDuration: 1) {
                 self.likeBtn.transform = CGAffineTransform(scaleX: 2, y: 2)
             }
         } else {
+            LikedProductData.products.removeLast()
             likeBtn.backgroundColor = .systemGray5
             likeBtn.setImage(UIImage(systemName: "heart"), for: .normal)
             UIView.animate(withDuration: 1) {

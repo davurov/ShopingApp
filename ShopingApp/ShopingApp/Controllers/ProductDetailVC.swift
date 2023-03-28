@@ -8,6 +8,7 @@
 import UIKit
 class ProductDetailVC: UIViewController {
     
+    @IBOutlet weak var likeBtn: UIButton!
     @IBOutlet weak var savedView: UIView!
     @IBOutlet weak var mainPhoto: UIImageView!
     @IBOutlet weak var thirdImage: UIImageView!
@@ -16,7 +17,9 @@ class ProductDetailVC: UIViewController {
     @IBOutlet weak var productName: UILabel!
     @IBOutlet weak var ProductPrice: UILabel!
     @IBOutlet var productCollors: [UIButton]!
+    
     var product = Product()
+    var sum = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,6 +94,27 @@ class ProductDetailVC: UIViewController {
         
         UIView.animate(withDuration: 1) {
             self.savedView.transform = CGAffineTransform(translationX: 0, y: -200)
+        }
+    }
+    
+    
+    @IBAction func sharePressed(_ sender: Any) {
+    }
+    @IBAction func likePressed(_ sender: Any) {
+        sum += 1
+        if sum % 2 != 0 {
+            LikedProductData.products.append(LikedProduct(name: productName.text ?? "", price: ProductPrice.text ?? "", photo: mainPhoto.image))
+            likeBtn.backgroundColor = .clear
+            likeBtn.setImage(UIImage(systemName: "heart.fill"), for: .normal)
+            UIView.animate(withDuration: 0.8) {
+                self.likeBtn.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
+            }
+        } else {
+            LikedProductData.products.removeLast()
+            likeBtn.setImage(UIImage(systemName: "heart"), for: .normal)
+            UIView.animate(withDuration: 0.8) {
+                self.likeBtn.transform = CGAffineTransform.identity
+            }
         }
     }
     
