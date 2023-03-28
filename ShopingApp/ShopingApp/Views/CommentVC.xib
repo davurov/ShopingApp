@@ -17,12 +17,52 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLn-S7-8Sg">
+                    <rect key="frame" x="62.666666666666657" y="283.66666666666669" width="249.99999999999997" height="100"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5hP-5G-zQ6">
+                            <rect key="frame" x="0.0" y="0.0" width="250" height="100"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smiley.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lpv-XS-B6y">
+                                    <rect key="frame" x="95" y="1" width="60" height="58.666666666666671"/>
+                                    <color key="tintColor" red="0.96470588239999999" green="0.75294117650000003" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="60" id="Dma-pl-TtB"/>
+                                        <constraint firstAttribute="height" constant="60" id="rgB-mA-PIM"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming Soon!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ktq-uF-h2Q">
+                                    <rect key="frame" x="57.333333333333343" y="70" width="135" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="5hP-5G-zQ6" secondAttribute="trailing" id="8ZU-zr-bKp"/>
+                        <constraint firstItem="5hP-5G-zQ6" firstAttribute="leading" secondItem="bLn-S7-8Sg" secondAttribute="leading" id="FAP-nV-ivh"/>
+                        <constraint firstAttribute="height" constant="100" id="bBt-gu-kgc"/>
+                        <constraint firstAttribute="bottom" secondItem="5hP-5G-zQ6" secondAttribute="bottom" id="eB9-rl-8Pz"/>
+                        <constraint firstItem="5hP-5G-zQ6" firstAttribute="top" secondItem="bLn-S7-8Sg" secondAttribute="top" id="lOK-s9-Cat"/>
+                        <constraint firstAttribute="width" constant="250" id="puV-C7-e0N"/>
+                    </constraints>
+                </view>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="53" y="21"/>
+            <constraints>
+                <constraint firstItem="bLn-S7-8Sg" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="EfO-w9-GZP"/>
+                <constraint firstItem="bLn-S7-8Sg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="M0l-2d-eTx"/>
+            </constraints>
+            <point key="canvasLocation" x="52.671755725190835" y="20.422535211267608"/>
         </view>
     </objects>
     <resources>
+        <image name="smiley.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
